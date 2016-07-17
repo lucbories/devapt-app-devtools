@@ -1,36 +1,71 @@
 # Devapt - Developpers Tools Application
 
-Current version: 1.0.0 beta (do not use in production environment)
+Current version: 1.0.0
 Please see the develop branch for current development.
+
 
 
 ## What is it?
 
-Developpers Tools application helps you to develop applications using devapt runtime:
-* logs
-* events / messages
-* metrics
+Developpers Tools application helps you to develop applications using devapt features and provides:
+* logs viewer
+* buses messages spy
+* metrics monitoring
+* runtime settings display
+* physical and logical topology display
+* more: coming soon
+
 
 
 ## USAGE
+Get package source:
+```
+mkdir devapt-app-devtools
+git init
+git remote add origin https://github.com/lucbories/devapt-app-devtools.git
+git pull origin master
+```
 
-TODO:
-Menubar: Home / Metrics / Config / Runtime / Logs / Topology
-Config -> Applications / Modules / Plugins / Nodes / Services / Views / Models / Menubars / Menus
-Metrics: node / services /
+Get dependencies packages and run application:
+```
+cd devapt-app-devtools
+npm install
+npm start
+```
+
+An express server is now listening on port 8081 by default.
+Connect to http://mydomain/devtools/ on a browser.
+
+Navigate into menus:
+* Runtime: server application settings and state
+  * All settings
+* Monitor
+  * Logical Topology
+  * Physical Topology
+  * Logs
+  * Messages
+  * Metrics
+* State: browser application state (coming soon)
+* API (coming soon)
+* Crud (coming soon)
+
+
 
 ## LICENCE
 
-See [LICENSE](https://github.com/lucbories/devapt-devtools/tree/master/LICENSE)
+See [LICENSE](https://github.com/lucbories/devapt-app-devtools/tree/master/LICENSE)
+
 
 
 ## BUGS
 
-See [LICENSE](https://github.com/lucbories/devapt-devtools/issues) TO CHECK
+See [LICENSE](https://github.com/lucbories/devapt-app-devtools/issues) TO CHECK
+
 
 
 ## Technical details
 
+devapt-app-devtools use devapt and devapt-devtools packages.
 
 
 
