@@ -19,9 +19,10 @@
     "dist"
   ],
   "scripts": {
-    "start": "start_node.cmd -n nodeA",
-    "debug_master": "start_node_debug.cmd -n nodeA",
-    "debug_nodeB": "start_node_debug.cmd -n nodeB"
+    "start":"node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
+    "start_cmd": "start_node.cmd -n NodeA",
+    "debug_master": "start_node_debug.cmd -n NodeA",
+    "debug_nodeB": "start_node_debug.cmd -n NodeB"
   },
   "keywords": [
     "server",
@@ -35,7 +36,7 @@
     "devtools"
   ],
   "dependencies": {
-    "devapt": "^1.0.1",
+    "devapt": "^1.0.2",
     "devapt-devtools": "^1.0.0"
   },
   "devDependencies": {}

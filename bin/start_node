@@ -1,0 +1,28 @@
+#!/bin/sh
+basedir=`dirname "$0"`
+
+case `uname` in
+    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+esac
+
+if [ -x "$basedir/node" ]; then
+  "$basedir/node"  "$basedir/node_modules/devapt/dist/server/start_node.js" "$@"
+  ret=$?
+else 
+  node  "$basedir/node_modules/devapt/dist/server/start_node.js" "$@"
+  ret=$?
+fi
+exit $ret
+
+# SET current_dir=%CD%
+
+# SET OPENSHIFT_BINDINGS=-s NodeA:NodeALocal8080:%OPENSHIFT_NODEJS_IP%:%OPENSHIFT_NODEJS_PORT%
+
+
+# cd node_modules/devapt
+
+# node dist\server\start_node.js %* 
+
+
+# var start_node = require('./node_modules/devapt/dist/server/start_node')
+# start_node -n NodeA -t ./dist/resources/world -b ./node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080:OPENSHIFT_NODEJS_IP:OPENSHIFT_NODEJS_PORT
