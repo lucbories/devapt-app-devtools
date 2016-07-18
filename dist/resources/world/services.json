@@ -195,10 +195,6 @@
 					"item":"name"
 				}
 			]
-		},
-		
-		"svc4":{
-			"type":"rest_api_resources_modifier"
 		}
 	}
 }

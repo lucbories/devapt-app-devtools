@@ -21,10 +21,15 @@ Developpers Tools application helps you to develop applications using devapt fea
 Get package source:
 ```
 mkdir devapt-app-devtools
+cd devapt-app-devtools
 git init
 git remote add origin https://github.com/lucbories/devapt-app-devtools.git
 git pull origin master
 ```
+
+
+Edit "start_node.cmd" and remove "OPENSHIFT_BINDINGS" variable if needed.
+
 
 Get dependencies packages and run application:
 ```
@@ -59,7 +64,7 @@ See [LICENSE](https://github.com/lucbories/devapt-app-devtools/tree/master/LICEN
 
 ## BUGS
 
-See [LICENSE](https://github.com/lucbories/devapt-app-devtools/issues) TO CHECK
+See [ISSUES](https://github.com/lucbories/devapt-app-devtools/issues)
 
 
 
