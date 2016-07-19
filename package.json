@@ -37,7 +37,7 @@
   ],
   "dependencies": {
     "devapt": "^1.0.3",
-    "devapt-devtools": "^1.0.0"
+    "devapt-devtools": "^1.0.1"
   },
   "devDependencies": {}
 }
