@@ -4,7 +4,6 @@
   "description": "Developpers Application Toolkit - Developper Tools application",
   "author": "Luc BORIES (https://github.com/lucbories)",
   "license": "Apache-2.0",
-  "license2": "Apache License 2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucbories/devapt-app-devtools.git"
@@ -14,10 +13,8 @@
   },
   "homepage": "https://github.com/lucbories/devapt-app-devtools#readme.md",
   "main": "",
-  "engines": [],
-  "directories": [
-    "dist"
-  ],
+  "engines": { "node" : ">=4.4.4" },
+  "directories": { "dist":"./dist" },
   "scripts": {
     "start": "node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start_cmd": "start_node.cmd -n NodeA",
