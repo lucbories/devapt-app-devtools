@@ -83,13 +83,26 @@
 				{
 					"route":"/logs",
 					"mw_file":"js/logs/logs_mw.js"
+				},
+				
+				
+				{
+					"route":"/logs2",
+					"redirect":"logs"
 				}
 			]
 		},
-		
+
 		"html_assets_1":{
 			"type":"html_assets",
 			"routes":[
+				{
+					"is_global":true,
+					"route":"/",
+					"directory":"D:/DATAS/GitHub/devapt-app-devtools/dist/assets",
+					"default":"index.html"
+				},
+
 				{
 					"route":"/css/.*.css",
 					"directory":"./public"
@@ -104,8 +117,7 @@
 				},
 				{
 					"route":"/plugins",
-					"plugins":["Foundation-6", "Cytoscape", "Devtools"],
-					"adirectory":"public/assets/plugins"
+					"plugins":["Foundation-6", "Cytoscape", "Devtools"]
 				}
 			],
 			"security":{
