@@ -23,7 +23,14 @@
     "start_cmd": "start_node.cmd -n NodeA",
     "debug_master": "start_node_debug.cmd -n NodeA",
     "debug_nodeB": "start_node_debug.cmd -n NodeB",
-    "commit":"unix2dos package.json && git status && pause && git commit -am "
+    "postversion":"unix2dos package.json",
+    "commit":"unix2dos package.json && git status && pause && git commit -am ",
+    "patch":"npm version patch && unix2dos package.json && git status && pause && git commit -am ",
+    "minor":"npm version minor && unix2dos package.json && git status && pause && git commit -am ",
+    "major":"npm version major && unix2dos package.json && git status && pause && git commit -am ",
+    "push-dev":"git push app-devtools develop",
+    "merge":"git checkout master && git merge develop && git push app-devtools master && git checkout develop",
+    "release":"git push app-devtools develop && git checkout master && git merge develop && git push app-devtools master && git checkout develop"
   },
   "keywords": [
     "server",
