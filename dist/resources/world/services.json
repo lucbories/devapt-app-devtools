@@ -1,5 +1,31 @@
 {
 	"services":{
+		"authentication":{
+			"type":"security",
+			"routes":[
+				{
+					"route":"/login",
+					"action":"login"
+				},
+				{
+					"route":"/signin",
+					"action":"login"
+				},
+				{
+					"route":"/logout",
+					"action":"logout"
+				},
+				{
+					"route":"/signup",
+					"action":"signup"
+				},
+				{
+					"route":"/renew",
+					"action":"renew"
+				}
+			]
+		},
+
 		"devtools_store":{
 			"type":"html_assets",
 			"routes":[
