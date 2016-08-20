@@ -12,6 +12,10 @@
 			{
 				"name":"Foundation6",
 				"package":"devapt-features-foundation6"
+			},
+			{
+				"name":"Sparklines",
+				"package":"devapt-features-sparklines"
 			}
 		]
 	},

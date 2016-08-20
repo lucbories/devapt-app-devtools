@@ -21,6 +21,7 @@
   "directories": { "dist":"./dist" },
   "scripts": {
     "start": "node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
+    "debug": "node debug node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start_512MB": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start_cmd": "start_node.cmd -n NodeA",
     "debug_master": "start_node_debug.cmd -n NodeA",
@@ -46,8 +47,8 @@
     "devtools"
   ],
   "dependencies": {
-    "devapt": "^1.0.3",
-    "devapt-devtools": "^1.0.1"
+    "devapt": "^1.0.5",
+    "devapt-devtools": "^1.0.3"
   },
   "devDependencies": {}
 }

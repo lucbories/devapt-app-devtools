@@ -43,7 +43,52 @@
 		},
 		
 		"metrics_http":{
-			"type":"metrics_http"
+			"type":"metrics_http",
+			"browser":{
+				"pollers":{
+					"get": {"interval_seconds":3, "name":"metrics_http_poller"}
+				},
+				"timeline":{
+					"get":[
+						{
+							"name":"requests_5m",
+							"transform":"id_counter",
+							"max":50,
+							"interval_seconds":6
+						},
+						{
+							"name":"requests_1h",
+							"transform":"id_counter",
+							"max":100,
+							"interval_seconds":36
+						},
+						{
+							"name":"requests_1d",
+							"transform":"id_counter",
+							"max":100,
+							"interval_seconds":864
+						},
+						{
+							"name":"latency_mean_5m",
+							"transform":"latency_mean",
+							"max":50,
+							"interval_seconds":6
+						},
+						{
+							"name":"latency_mean_1h",
+							"transform":"latency_mean",
+							"max":100,
+							"interval_seconds":36
+						},
+						{
+							"name":"latency_mean_1d",
+							"transform":"latency_mean",
+							"max":100,
+							"interval_seconds":864
+						}
+					]
+				}
+			}
 		},
 		
 		"metrics_host":{
@@ -143,7 +188,7 @@
 				},
 				{
 					"route":"/plugins",
-					"plugins":["Foundation-6", "Cytoscape", "Devtools"]
+					"plugins":["Foundation-6", "Cytoscape", "Devtools", "Sparklines"]
 				}
 			],
 			"security":{

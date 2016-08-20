@@ -13,7 +13,7 @@
 					
 					"security": {
 						"authentication": {
-							"enabled":true,
+							"enabled":false,
 							"plugins":["file_users"]
 						}
 					}
