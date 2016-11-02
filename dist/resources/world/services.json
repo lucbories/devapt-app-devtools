@@ -146,6 +146,14 @@
                 
                 
 				{
+					"route":"/runtime/topology_registry",
+					"mw_file":"js/runtime/topology_registry_mw.js"
+				},
+				{
+					"route":"/runtime/topology_runtime",
+					"mw_file":"js/runtime/topology_runtime_mw.js"
+				},
+				{
 					"route":"/runtime/settings",
 					"mw_file":"js/settings/settings_mw.js"
 				},
@@ -225,6 +233,10 @@
 			]
 		},
 		
+		"resources":{
+			"type":"resources_query"
+		},
+
 		"rest_api_resources_query_1":{
 			"type":"rest_api_resources_query",
 			"routes":[

@@ -1,41 +1,20 @@
 {
 	"plugins":{
-		"rendering":[
-			{
-				"name":"Devtools",
-				"file":"js/devtools_rendering_plugin"
-			},
-			{
-				"name":"Cytoscape",
-				"package":"devapt-features-cytoscape"
-			},
-			{
-				"name":"Foundation6",
-				"package":"devapt-features-foundation6"
-			},
-			{
-				"name":"Sparklines",
-				"package":"devapt-features-sparklines"
-			}
-		]
-	},
-	
-	"todo_resources_classes":{
-		"MetricsHttpDetails":"./src/js/metrics/metrics_http_details",
-		"MetricsHttpDashboard":"./src/js/metrics/metrics_http_dashboard",
-		"MetricsHttpTree":"./src/js/metrics/metrics_http_tree"
-	},
-	
-	"plugins_save":{
-		"backend-foundation5":{
-			"js":"backend-foundation5/plugin",
-			"css":["/assets/css/normalize.css", "/assets/css/foundation.css"],
-			"autoload":true
+		"Devtools":{
+			"type":"rendering",
+			"file":"js/devtools_rendering_plugin"
 		},
-		"backend-jquery-ui":{
-			"js":"backend-jquery-ui/plugin",
-			"css":[],
-			"autoload":true
+		"Cytoscape":{
+			"type":"rendering",
+			"package":"devapt-features-cytoscape"
+		},
+		"Foundation6":{
+			"type":"rendering",
+			"package":"devapt-features-foundation6"
+		},
+		"Sparklines":{
+			"type":"rendering",
+			"package":"devapt-features-sparklines"
 		}
 	}
 }

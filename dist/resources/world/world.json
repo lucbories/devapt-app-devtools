@@ -1,15 +1,19 @@
 {
 	"nodes":"nodes.json",
 	
-	"services":"services.json",
-	
-	"applications":"applications.json",
-	
-	"modules":"modules.json",
-	
-	"plugins":"plugins.json",
-	
+	"tenants":{
+		"tenantA":{
+			"applications":"applications.json",
+			"packages":"tenantA_packages.json",
+			"security":{}
+		}
+	},
+
+	"deployments":"deployments.json",
+
 	"security":"security.json",
+
+	"plugins":"plugins.json",
 	
 	"loggers":"loggers.json",
 	

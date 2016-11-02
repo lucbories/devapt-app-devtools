@@ -2,7 +2,7 @@
 	"security":{
 		"is_readonly":false,
 		
-		"connexions":[],
+		"datasources":[],
 		
 		"authentication": {
 			"enabled":false,

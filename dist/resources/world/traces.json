@@ -1,35 +1,25 @@
 {
 	"traces":{
-		"enabled":true,
-		
 		"modules":{
 			".*":false
 		},
 		
 		"classes":{
-			"Application":false,
-			"Service":false,
-			"ServiceProvider":false,
-			"AuthenticationWrapper":true,
-			"AuthenticationLowDbPlugin":false,
-			"AuthenticationManager":false,
+			"TopologyDefinePackage":false,
+			"TopologyDefineMenubar":false,
+			"TopologyDefineApplication":false,
+			"TopologyDefineCommand":false,
+			".*Service":false,
+			".*Authentication.*":false,
+			".*Provider":false,
+			"ClientRuntime":true,
+			"UI":true,
+			"Router":true,
 			".*":false
 		},
 		
 		"instances":{
-			"NodeA":false,
-			"NodeB":true,
-			"NodeB_msg_bus":true,
-			"NodeB_msg_bus_gateway":true,
 			".*":false
-		},
-		
-		"unused":{
-			"levels":["debug", "info", "warn", "error"],
-			"NodeALocal8081xxx":true,
-			".*Server.*":true,
-			"common/executables/executable_route_assets":true,
-			"common/security/authentication_wrapper":true
 		}
 	}
 }

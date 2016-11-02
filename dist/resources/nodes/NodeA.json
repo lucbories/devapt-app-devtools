@@ -34,11 +34,11 @@
 			"enabled":true,
 			
 			"RuntimeStage0":{
-				"enabled":true
+				"enabled":false
 			},
 			
 			"RuntimeStage1":{
-				"enabled":true
+				"enabled":false
 			},
 			
 			"RuntimeStage2":{
@@ -50,11 +50,11 @@
 			},
 			
 			"RuntimeStage4":{
-				"enabled":false
+				"enabled":true
 			},
 			
 			"RuntimeStage5":{
-				"enabled":false
+				"enabled":true
 			}
 		}
 	}

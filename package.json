@@ -1,6 +1,6 @@
 {
   "name": "devapt-app-devtools",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Developpers Application Toolkit - Developper Tools application",
   "author": {
     "name":"Luc BORIES",
@@ -21,7 +21,10 @@
   "directories": { "dist":"./dist" },
   "scripts": {
     "start": "node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
+    "start:src": "node --version && node node_modules/devapt/src/server/start_node.js -n NodeA -t src/resources/world -b node_modules/devapt-devtools/src -s NodeA:NodeALocal8080",
     "debug": "node debug node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
+    "start:babel": "node node_modules/devapt/src/server/start_node.babel.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
+    "debug:babel": "node debug node_modules/devapt/src/server/start_node.babel.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start_512MB": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start_cmd": "start_node.cmd -n NodeA",
     "debug_master": "start_node_debug.cmd -n NodeA",

@@ -1,7 +1,7 @@
 {
-	"modules":{
+	"packages":{
 		"devtools":{
-			"base_dir":"../devtools",
+			"base_dir":"../../../../devapt-devtools/dist/resources/devtools",
 			"resources":[
 				"ui_menubars.json",
 				"ui_messages.json",
@@ -11,7 +11,9 @@
 				"ui_runtime.json"
 			],
 			"templates":[],
-			"includes":[]
+			"includes":[],
+			"commands":"../../../../devapt-devtools/dist/resources/devtools/ui_commands.json",
+			"services":"./services.json"
 		},
 		
 		"security":{
@@ -19,7 +21,8 @@
 			"resources":[
 			],
 			"templates":[],
-			"includes":[]
+			"includes":[],
+			"services":{}
 		}
 	}
 }

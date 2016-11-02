@@ -1,59 +1,44 @@
 {
 	"applications":{
 		"assets":{
+			"title":"Assets provider",
 			"url":"assets",
+			"license":"APACHE-LICENSE-2.0",
 			
-			"services":{
-				"provides":{
-					"html_assets_1": { "servers":["NodeALocal8080"], "filters":["*"] }
-				},
-				"consumes":{
-				}
-			},
+			"provided_services":["html_assets_1"],
+			"used_services":[],
 			
-			"modules": [],
-			"plugins":[],
-			"resources":[],
+			"used_packages": [],
+			"used_plugins":[],
 			
 			"assets":{
 				"css":[],
 				"js":[],
 				"img":[],
 				"index":""
-			},
-			"license":"APACHE-LICENSE-2.0"
+			}
 		},
 		
 		"devtools":{
+			"title":"Devtools application",
 			"url":"devtools",
+			"license":"APACHE-LICENSE-2.0",
+
+			"default_view":"metrics_tabs",
+			"default_menubar":"default_menubar",
 			
-			"services":{
-				"provides":{
-					"devtools_store": { "servers":["NodeALocal8080"] },
-					"devtools_panel": { "servers":["NodeALocal8080"] },
-					"metrics_http": { "servers":["NodeALocal8080"] },
-					"metrics_host": { "servers":["NodeALocal8080"] },
-					"metrics_nodejs": { "servers":["NodeALocal8080"] },
-					"metrics_bus": { "servers":["NodeALocal8080"] },
-					"topology": { "servers":["NodeALocal8080"] },
-					"logs": { "servers":["NodeALocal8080"] },
-					"messages": { "servers":["NodeALocal8080"] }
-				},
-				"consumes":{
-				}
-			},
+			"provided_services":["devtools_store", "devtools_panel", "metrics_http", "metrics_host", "metrics_nodejs", "metrics_bus", "topology", "logs", "messages"],
+			"used_services":[],
 			
-			"modules": [],
-			"plugins":[],
-			"resources":[],
+			"used_packages": ["devtools"],
+			"used_plugins":[],
 			
 			"assets":{
 				"css":[],
-				"js":[],
+				"js":["plugins/Devtools/browser.min.js", "plugins/Devtools/devapt-browser.js", "plugins/Devtools/app.js"],
 				"img":[],
 				"index":""
-			},
-			"license":"APACHE-LICENSE-2.0"
+			}
 		}
 	}
 }
