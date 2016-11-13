@@ -31,11 +31,25 @@
 			"used_services":[],
 			
 			"used_packages": ["devtools"],
-			"used_plugins":[],
+			"used_plugins":["Devtools", "Foundation6", "DefaultRendering"],
 			
 			"assets":{
-				"css":[],
-				"js":["plugins/Devtools/browser.min.js", "plugins/Devtools/devapt-browser.js", "plugins/Devtools/app.js"],
+				"css":[
+				],
+				"js":[
+					{
+						"id":"js-browser",
+						"src":"plugins/Devtools/browser.min.js"
+					},
+					{
+						"id":"js-devapt-browser",
+						"src":"plugins/Devtools/devapt-browser.js"
+					},
+					{
+						"id":"js-devtools-app",
+						"src":"plugins/Devtools/app.js"
+					}
+				],
 				"img":[],
 				"index":""
 			}

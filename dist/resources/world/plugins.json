@@ -1,5 +1,9 @@
 {
 	"plugins":{
+		"DefaultRendering":{
+			"type":"rendering",
+			"file":"../node_modules/devapt/dist/server/default_plugins/rendering_default_plugin"
+		},
 		"Devtools":{
 			"type":"rendering",
 			"file":"js/devtools_rendering_plugin"
