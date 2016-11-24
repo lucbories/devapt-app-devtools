@@ -31,7 +31,7 @@
 			"used_services":[],
 			
 			"used_packages": ["devtools"],
-			"used_plugins":["Devtools", "Foundation6", "DefaultRendering"],
+			"used_plugins":["Devtools", "Foundation6", "Sparklines", "DefaultRendering"],
 			
 			"assets":{
 				"css":[
@@ -44,6 +44,10 @@
 					{
 						"id":"js-devapt-browser",
 						"src":"plugins/Devtools/devapt-browser.js"
+					},
+					{
+						"id":"js-devapt-bootstrap",
+						"src":"plugins/Devtools/devapt-bootstrap.js"
 					},
 					{
 						"id":"js-devtools-app",

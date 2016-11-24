@@ -124,23 +124,28 @@
 					"page_menubar":"default_menubar"
 				},
 				{
-					"route":"/topology/logical",
+					"route":"/monitor/metrics",
+					"page_view":"metrics_tabs",
+					"page_menubar":"default_menubar"
+				},
+				{
+					"route":"/monitor/topology/logical",
 					"mw_file":"js/topology/topology_logical_mw.js"
 				},
 				{
-					"route":"/topology/physical",
+					"route":"/monitor/topology/physical",
 					"mw_file":"js/topology/topology_physical_mw.js"
 				},
 				{
-					"route":"/metrics",
+					"route":"/monitor/metrics",
 					"mw_file":"js/metrics/metrics_mw.js"
 				},
 				{
-					"route":"/logs",
+					"route":"/monitor/logs",
 					"mw_file":"js/logs/logs_mw.js"
 				},
 				{
-					"route":"/messages",
+					"route":"/monitor/messages",
 					"mw_file":"js/messages/messages_mw.js"
 				},
                 
@@ -156,12 +161,6 @@
 				{
 					"route":"/runtime/settings",
 					"mw_file":"js/settings/settings_mw.js"
-				},
-				
-				
-				{
-					"route":"/logs",
-					"mw_file":"js/logs/logs_mw.js"
 				},
 				
 				
