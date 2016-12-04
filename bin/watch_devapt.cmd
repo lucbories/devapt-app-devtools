@@ -1,0 +1,3 @@
+
+cd ../devapt
+gulp watch

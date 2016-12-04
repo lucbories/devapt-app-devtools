@@ -3,8 +3,8 @@
   "version": "1.1.0",
   "description": "Developpers Application Toolkit - Developper Tools application",
   "author": {
-    "name":"Luc BORIES",
-    "email":"luc.bories@gmail.com",
+    "name": "Luc BORIES",
+    "email": "luc.bories@gmail.com",
     "url": "https://github.com/lucbories"
   },
   "license": "Apache-2.0",
@@ -17,9 +17,14 @@
   },
   "homepage": "https://github.com/lucbories/devapt-app-devtools#readme.md",
   "main": "",
-  "engines": { "node" : ">=4.4.4" },
-  "directories": { "dist":"./dist" },
+  "engines": {
+    "node": ">=4.4.4"
+  },
+  "directories": {
+    "dist": "./dist"
+  },
   "scripts": {
+    "watch": "parallelshell \"cd ../devapt && gulp watch\" \"cd ../devapt-devtools && gulp watch\" \"npm start\" ", 
     "start": "node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start:src": "node --version && node node_modules/devapt/src/server/start_node.js -n NodeA -t src/resources/world -b node_modules/devapt-devtools/src -s NodeA:NodeALocal8080",
     "debug": "node debug node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
@@ -53,5 +58,8 @@
     "devapt": "^1.0.7",
     "devapt-devtools": "^1.0.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "parallelshell": "^2.0.0"
+  }
 }

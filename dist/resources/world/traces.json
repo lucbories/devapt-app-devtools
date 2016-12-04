@@ -17,8 +17,9 @@
 			"Security":false,
 			".*Provider":false,
 			"ClientRuntime":false,
-			"UI":false,
-			"Router":true,
+			"UI":true,
+			"Router":false,
+			"Component":true,
 			".*":false
 		},
 		
