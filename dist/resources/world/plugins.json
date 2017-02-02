@@ -4,6 +4,10 @@
 			"type":"rendering",
 			"file":"../node_modules/devapt/dist/common/default_plugins/rendering_default_plugin"
 		},
+		"Labs":{
+			"type":"rendering",
+			"file":"../../../../devapt-features-labs/dist/js/rendering_plugin"
+		},
 		"Devtools":{
 			"type":"rendering",
 			"file":"js/devtools_rendering_plugin"

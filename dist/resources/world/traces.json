@@ -5,7 +5,7 @@
 		},
 		
 		"classes":{
-			"TopologyDefineWorld":false,
+			"TopologyDefine*":false,
 			"TopologyDefineTenant":false,
 			"TopologyDefinePackage":false,
 			"TopologyDefineMenubar":false,
@@ -18,8 +18,8 @@
 			".*Provider":false,
 			"ClientRuntime":false,
 			"UI":true,
-			"Router":false,
-			"Component":true,
+			"Router":true,
+			"Component":false,
 			".*":false
 		},
 		

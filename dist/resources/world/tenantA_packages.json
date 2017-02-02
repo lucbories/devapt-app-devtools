@@ -1,5 +1,13 @@
 {
 	"packages":{
+		"app":{
+			"base_dir":".",
+			"resources":[],
+			"templates":[],
+			"includes":[],
+			"commands":[],
+			"services":"services.json"
+		},
 		"devtools":{
 			"base_dir":"../../../../devapt-devtools/dist/resources/devtools",
 			"resources":[
@@ -8,12 +16,24 @@
 				"ui_logs.json",
 				"ui_metrics.json",
 				"ui_topology.json",
-				"ui_runtime.json"
+				"ui_runtime.json",
+				"ui_resources.json"
 			],
 			"templates":[],
 			"includes":[],
-			"commands":"../../../../devapt-devtools/dist/resources/devtools/ui_commands.json",
-			"services":"./services.json"
+			"commands":"devtools_commands.json",
+			"services":"devtools_services.json"
+		},
+
+		"labs":{
+			"base_dir":"../../../../devapt-features-labs/src/resources",
+			"resources":[
+				"labs_ui.json"
+			],
+			"templates":["labs_features.json"],
+			"includes":[],
+			"commands":"labs_commands.json",
+			"services":"labs_services.json"
 		},
 		
 		"security":{

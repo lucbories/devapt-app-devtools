@@ -23,7 +23,10 @@
 						"servers":["NodeALocal8080"]
 					},
 					"rest_api_resources_query_1": { "servers":["NodeALocal8080"] },
-					"devtools_panel": { "servers":["NodeALocal8080"] },
+					"devtools_monitor": { "servers":["NodeALocal8080"] },
+					"devtools_runtime": { "servers":["NodeALocal8080"] },
+					"devtools_admin": { "servers":["NodeALocal8080"] },
+					"labs_service": { "servers":["NodeALocal8080"] },
 					"metrics_http": { "servers":["NodeALocal8080"] },
 					"metrics_host": { "servers":["NodeALocal8080"] },
 					"metrics_nodejs": { "servers":["NodeALocal8080"] },
