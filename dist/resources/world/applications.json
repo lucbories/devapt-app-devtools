@@ -48,10 +48,6 @@
 					{
 						"id":"js-devapt-bootstrap",
 						"src":"plugins/Devtools/devapt-bootstrap.js"
-					},
-					{
-						"id":"js-devtools-app",
-						"src":"plugins/Devtools/app.js"
 					}
 				],
 				"img":[],

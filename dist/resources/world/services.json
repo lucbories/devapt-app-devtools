@@ -38,15 +38,15 @@
 
 				{
 					"route":"/css/.*.css",
-					"directory":"./public"
+					"directory":"./public/assets/css"
 				},
 				{
-					"route":"/js",
+					"route":"/js/.*.js",
 					"directory":"public/assets/js"
 				},
 				{
-					"route":"/img/.*.jpg",
-					"directory":"./public"
+					"route":"/img",
+					"directory":"./public/assets/img"
 				},
 				{
 					"route":"/plugins",

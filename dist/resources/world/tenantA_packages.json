@@ -30,7 +30,7 @@
 			"resources":[
 				"labs_ui.json"
 			],
-			"templates":["labs_features.json"],
+			"templates":["labs_plot_features.json", "labs_terminal_features.json"],
 			"includes":[],
 			"commands":"labs_commands.json",
 			"services":"labs_services.json"
