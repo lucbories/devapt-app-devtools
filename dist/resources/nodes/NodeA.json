@@ -6,19 +6,25 @@
 		"name":"NodeA",
 		
 		"msg_bus":{
-			"type":"simplebus_server",
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
 			"host":"localhost",
-			"port":5000
+			"port":"N/A"
 		},
 		"logs_bus":{
-			"type":"simplebus_server",
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
 			"host":"localhost",
-			"port":5001
+			"port":"N/A"
 		},
 		"metrics_bus":{
-			"type":"simplebus_server",
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
 			"host":"localhost",
-			"port":5002
+			"port":"N/A"
 		}
 	},
 	
@@ -34,15 +40,15 @@
 			"enabled":false,
 			
 			"RuntimeStage0":{
-				"enabled":false
+				"enabled":true
 			},
 			
 			"RuntimeStage1":{
-				"enabled":false
+				"enabled":true
 			},
 			
 			"RuntimeStage2":{
-				"enabled":false
+				"enabled":true
 			},
 			
 			"RuntimeStage3":{

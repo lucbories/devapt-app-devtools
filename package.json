@@ -1,6 +1,6 @@
 {
   "name": "devapt-app-devtools",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Developpers Application Toolkit - Developper Tools application",
   "author": {
     "name": "Luc BORIES",
@@ -24,9 +24,9 @@
     "dist": "./dist"
   },
   "scripts": {
+    "start": "node node_modules/devapt-core-server/dist/js/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist/js -s NodeA:NodeALocal8081",
     "watch": "parallelshell \"cd ../devapt && gulp watch\" \"cd ../devapt-devtools && gulp watch\" \"npm start\" ", 
-    "start": "node node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
-    "start:src": "node --version && node node_modules/devapt/src/server/start_node.js -n NodeA -t src/resources/world -b node_modules/devapt-devtools/src -s NodeA:NodeALocal8080",
+    "start:src": "node --version && node node_modules/devapt-core-server/src/js/start_node.js -n NodeA -t src/resources/world -b node_modules/devapt-devtools/src -s NodeA:NodeALocal8080",
     "debug": "node debug node_modules/devapt/dist/server/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "start:babel": "node node_modules/devapt/src/server/start_node.babel.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
     "debug:babel": "node debug node_modules/devapt/src/server/start_node.babel.js -n NodeA -t dist/resources/world -b node_modules/devapt-devtools/dist -s NodeA:NodeALocal8080",
@@ -55,7 +55,9 @@
     "devtools"
   ],
   "dependencies": {
-    "devapt": "^1.0.7",
+    "devapt-core-common": ">=2.0.0",
+    "devapt-core-server": ">=2.0.0",
+    "devapt-core-services": ">=2.0.0",
     "devapt-devtools": "^1.0.5"
   },
   "devDependencies": {

@@ -5,8 +5,10 @@
 		"datasources":[],
 		
 		"authentication": {
-			"enabled":false,
+			"enabled":true,
 			
+			"unused_plugins":{},
+
 			"plugins":{
 				"token123": {
 					"mode":"token",
@@ -21,24 +23,26 @@
 					"password_fieldname":"password"
 				}
 			},
+
+			"unused_default_plugins":[],
 			
 			"default_plugins": ["file_users"]
 		},
 		
 		"authorization": {
 			"enabled":false,
-			"mode":"database",
+			"unused_mode":"database",
 			
-			"model":"MODEL_AUTH_USERS_ROLES",
-			"role":"label",
-			"username":"users_login",
+			"unused_model":"MODEL_AUTH_USERS_ROLES",
+			"unused_role":"label",
+			"unused_username":"users_login",
 			
-			"alt": {
+			"unused_alt": {
 				"mode":"jsonfile",
 				"file":"users.json"
 			},
 			
-			"roles":{
+			"unused_roles":{
 				"*": {
 					"list_resources":"ROLE_RESOURCES_LIST",
 					"get_resource":"ROLE_RESOURCE_GET"

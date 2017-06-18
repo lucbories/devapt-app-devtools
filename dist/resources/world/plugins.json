@@ -2,15 +2,15 @@
 	"plugins":{
 		"DefaultRendering":{
 			"type":"rendering",
-			"file":"../node_modules/devapt/dist/common/default_plugins/rendering_default_plugin"
+			"file":"../../../node_modules/devapt-core-common/dist/js/default_plugins/rendering_default_plugin"
 		},
-		"Labs":{
-			"type":"rendering",
-			"file":"../../../../devapt-features-labs/dist/js/rendering_plugin"
+		"DefaultServices":{
+			"type":"services",
+			"file":"../../../node_modules/devapt-core-services/dist/js/default_plugins/services_default_plugin"
 		},
 		"Devtools":{
 			"type":"rendering",
-			"file":"js/devtools_rendering_plugin"
+			"file":"../../../node_modules/devapt-devtools/dist/js/devtools_rendering_plugin"
 		},
 		"Cytoscape":{
 			"type":"rendering",

@@ -3,7 +3,7 @@
 	
 	"tenants":{
 		"tenantA":{
-			"applications":"applications.json",
+			"applications":"tenantA_applications.json",
 			"packages":"tenantA_packages.json",
 			"security":{}
 		}

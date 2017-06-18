@@ -9,7 +9,7 @@
 			"services":"services.json"
 		},
 		"devtools":{
-			"base_dir":"../../../../devapt-devtools/dist/resources/devtools",
+			"base_dir":"../../../node_modules/devapt-devtools/dist/resources/devtools",
 			"resources":[
 				"ui_menubars.json",
 				"ui_messages.json",
@@ -23,17 +23,6 @@
 			"includes":[],
 			"commands":"devtools_commands.json",
 			"services":"devtools_services.json"
-		},
-
-		"labs":{
-			"base_dir":"../../../../devapt-features-labs/src/resources",
-			"resources":[
-				"labs_ui.json"
-			],
-			"templates":["labs_plot_features.json", "labs_terminal_features.json"],
-			"includes":[],
-			"commands":"labs_commands.json",
-			"services":"labs_services.json"
 		},
 		
 		"security":{

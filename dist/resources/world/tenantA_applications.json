@@ -9,7 +9,7 @@
 			"used_services":[],
 			
 			"used_packages": [],
-			"used_plugins":[],
+			"used_plugins":["DefaultServices"],
 			
 			"assets":{
 				"css":[],
@@ -27,11 +27,11 @@
 			"default_view":"metrics_tabs",
 			"default_menubar":"default_menubar",
 			
-			"provided_services":["labs_service", "devtools_store", "devtools_monitor", "devtools_runtime", "devtools_admin", "metrics_http", "metrics_host", "metrics_nodejs", "metrics_bus", "topology", "logs", "messages"],
+			"provided_services":["devtools_store", "devtools_monitor", "devtools_runtime", "devtools_admin", "metrics_http", "metrics_host", "metrics_nodejs", "metrics_bus", "topology", "logs", "messages"],
 			"used_services":[],
 			
-			"used_packages": ["devtools", "labs"],
-			"used_plugins":["Devtools", "Labs", "Foundation6", "Sparklines", "DefaultRendering"],
+			"used_packages": ["devtools"],
+			"used_plugins":["DefaultServices", "Devtools", "Foundation6", "Sparklines", "DefaultRendering"],
 			
 			"assets":{
 				"css":[

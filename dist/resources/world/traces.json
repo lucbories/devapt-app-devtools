@@ -5,11 +5,11 @@
 		},
 		
 		"classes":{
-			"TopologyDefine*":false,
-			"TopologyDefineTenant":false,
-			"TopologyDefinePackage":false,
+			"TopologyDeployLocalNode":true,
+			"TopologyDefineTenant":true,
+			"TopologyDefinePackage":true,
 			"TopologyDefineMenubar":false,
-			"TopologyDefineApplication":false,
+			"TopologyDefineApplication":true,
 			"TopologyDefineCommand":false,
 			".*Service":false,
 			".*Authentication.*":false,
